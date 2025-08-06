@@ -1,0 +1,30 @@
+.stormcard_wrapper {
+    margin-top: 110px !important;
+    margin-bottom: 100px !important;
+    max-width: 75%;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin: auto;
+    background: rgb(18, 18, 18);
+    border-radius: 40px;
+}
+
+.stormcard_card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    border-radius: 40px;
+    /* box-shadow: 0 0 3px rgba(245, 245, 245, 0.334); */
+    border: 0.13rem solid #3da9fc50;
+    box-shadow: 0 0 50px #3da9fc;
+}
+
+.card_title {
+    padding-left: 40px;
+    color: #3da9fc;
+    font-size: 25px;
+    font-weight: 800;
+}

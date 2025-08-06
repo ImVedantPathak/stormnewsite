@@ -1,0 +1,79 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.leaderboardGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 75%;
+}
+
+.leaderboardCard {
+    background: #1b1b1b;
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.subtitle {
+    color: #888;
+    font-size: 0.85rem;
+    margin-bottom: 16px;
+}
+
+.scores {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.scoreRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.scoreBarWrapper {
+    background: #000;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 80%;
+    height: 32px;
+}
+
+.scoreBar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    border-radius: 4px;
+    transition: width 0.5s ease;
+    white-space: nowrap;
+}
+
+.orange {
+    background: #ff6b1f;
+}
+
+.darkOrange {
+    background: #a64818;
+}
+
+.grey {
+    background: #555;
+}
+
+.name {
+    font-size: 0.9rem;
+}
+
+.value {
+    font-weight: bold;
+    margin-left: 12px;
+    width: 15%; /* Ensures right alignment */
+    text-align: right;
+}

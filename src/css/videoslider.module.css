@@ -1,0 +1,136 @@
+.section_title {
+    color: white;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.carousel_wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* margin-bottom: 400px !important; */
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Common Slide Styles */
+.slide {
+    position: absolute;
+    width: 75%;
+    aspect-ratio: 16 / 9;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform-origin: center;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Active Slide (centered) */
+.active {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+    z-index: 3;
+    pointer-events: auto;
+}
+
+/* Left Slide */
+.left {
+    transform: translateX(-90%) scale(0.8) rotate(-5deg);
+    opacity: 0.5;
+    z-index: 2;
+}
+
+/* Right Slide */
+.right {
+    transform: translateX(90%) scale(0.8) rotate(5deg);
+    opacity: 0.5;
+    z-index: 2;
+}
+
+/* Hidden Slides */
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Aspect Ratio */
+.slide iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .slide {
+        width: 90%;
+    }
+}
+
+/* Arrows */
+.arrow_left, .arrow_right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 51px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 5;
+    transition: background 0.3s ease;
+}
+
+.arrow_left:hover, .arrow_right:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.arrow_left {
+    left: 20px;
+}
+
+.arrow_right {
+    right: 20px;
+}
+
+/* Dots */
+.dots {
+    margin-top: 20px;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #555;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.activeDot {
+    background: #3da9fc;
+}

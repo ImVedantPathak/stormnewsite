@@ -1,0 +1,95 @@
+.roadmap_wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0px;
+}
+
+/* Base line */
+.base_line {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    right: 5%;
+    height: 4px;
+    background: #333;
+    z-index: 0;
+}
+
+/* Progress Fill */
+.progress_fill {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 62%;
+    height: 4px;
+    background: #3da9fc;
+    z-index: 1;
+}
+
+/* "Currently Here" Marker */
+.current_marker {
+    position: absolute;
+    top: calc(50% - 40px);
+    left: calc(12% + 55%);
+    background: #3da9fc;
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 2;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+/* Tick mark wrapper */
+.step_tick {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Vertical tick line */
+.tick_line {
+    width: 2px;
+    height: 20px;
+    background-color: #3da9fc;
+    margin-bottom: 8px;
+}
+
+/* Label for tick */
+.tick_label {
+    position: relative;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Tooltip hidden by default */
+.tooltip {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 8px 12px;
+    border-radius: 8px;
+    white-space: nowrap;
+    font-size: 12px;
+    color: #fff;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 3;
+}
+
+/* Show tooltip on hover */
+.tick_label:hover .tooltip {
+    opacity: 1;
+}
