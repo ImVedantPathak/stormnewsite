@@ -10,6 +10,12 @@
     border-radius: 40px;
 }
 
+@media (max-width: 1300px) {
+    .stormcard_wrapper {
+        max-width: 90%;
+    }
+}
+
 .stormcard_card {
     padding: 20px;
     display: flex;
