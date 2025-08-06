@@ -6,7 +6,6 @@ import Navbar from './Navbar'
 import Hero from './Hero'
 import Seriesmap from './Seriesmap'
 import VideoSlider from './VideoSlider'
-import Benchmarks from './Benchmarks'
 
 function Layout() {
     return (
@@ -15,7 +14,6 @@ function Layout() {
         <Hero />
         <Seriesmap />
         <VideoSlider />
-        <Benchmarks />
         </>
     )
 }

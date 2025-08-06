@@ -62,7 +62,7 @@ export default function IcosahedronScene() {
         scene.add(icosahedronGroup);
 
         // Geometry & Wireframe
-        const geometry = new THREE.IcosahedronGeometry(8);
+        const geometry = new THREE.IcosahedronGeometry(9);
         const edges = new THREE.EdgesGeometry(geometry);
         const wireMaterial = new THREE.LineBasicMaterial({ color: 0x7d94ba });
         const wireframe = new THREE.LineSegments(edges, wireMaterial);

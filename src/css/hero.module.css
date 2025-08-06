@@ -7,11 +7,11 @@
     flex-direction: row; 
     align-items: center; 
     justify-content: center; 
-    gap: 80px;
+    gap: 120px;
 }
 
 .heroText {
-    font-size: 40px;
+    font-size: 50px;
     max-width: 700px;
 }
 
@@ -29,8 +29,8 @@
 } */
 
 .icosahedron {
-    width: 450px;
-    height: 450px;
+    width: 500px;
+    height: 500px;
     position: relative;
     display: flex;            
     align-items: center;       
@@ -46,7 +46,7 @@
 
 .cardContainer {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     justify-content: left;
     flex-wrap: wrap;
 }
@@ -56,7 +56,8 @@
     background: rgb(22, 22, 22);
     border-radius: 16px;
     padding: 20px;
-    max-width: 260px;
+    max-width: 310px;
+    height: 150px;
     min-width: 200px;
     box-shadow: 0 0 3px rgba(245, 245, 245, 0.334);
     display: flex;
@@ -73,14 +74,14 @@
 }
 
 .cardTitle {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     color: #ffffff;
     margin: 0;
 }
 
 .cardDesc {
-    font-size: 14px;
+    font-size: 15px;
     color: #ffffff;
     line-height: 1.5;
     margin: 0;
