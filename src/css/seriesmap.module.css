@@ -1,36 +1,79 @@
-.stormcard_wrapper {
-    margin-top: 110px !important;
-    margin-bottom: 100px !important;
-    max-width: 70%;
+.card_wrapper {
+    background-color: rgb(22,22,22); /* Matches the light beige tone */
+    display: flex;
+    padding: 40px;
+    border-radius: 16px;
+    gap: 40px;
     align-items: center;
-    justify-content: center;
-    text-align: left;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 69%;
     margin: auto;
-    background: rgb(18, 18, 18);
-    border-radius: 40px;
+    margin-top: 120px !important;
+    margin-bottom: 100px !important;
 }
 
-@media (max-width: 1300px) {
-    .stormcard_wrapper {
-        max-width: 90%;
-    }
-}
-
-.stormcard_card {
-    padding: 20px;
+.text_wrapper {
+    max-width: 600px;
     display: flex;
     flex-direction: column;
-    align-items: left;
-    justify-content: left;
-    border-radius: 40px;
-    /* box-shadow: 0 0 3px rgba(245, 245, 245, 0.334); */
-    border: 0.13rem solid #3da9fc50;
-    box-shadow: 0 0 50px #3da9fc;
+    gap: 24px;
+}
+
+.header {
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.header_subtitle {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #cacaca;
+}
+
+.article_button a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: transparent;
+    border: 0.13rem solid #3da9fc;
+    border-radius: 8px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #3da9fc;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.article_button a:hover {
+    background-color: #3da9fc;
+    color: white;
+}
+
+.sub_card {
+    background-color: #3da9fcb1;
+    padding: 32px;
+    width: 200px;
+    height: 160px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.sub_card:hover {
+    transform: translateY(-5px);
 }
 
 .card_title {
-    padding-left: 40px;
-    color: #3da9fc;
     font-size: 35px;
-    font-weight: 800;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.guide_arrow {
+    font-size: 30px;
+    align-self: flex-end;
+    color: #ffffff;
 }
