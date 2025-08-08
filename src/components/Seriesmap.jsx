@@ -12,11 +12,11 @@ export default function Seriesmap() {
             </div>
             <div className={styles.sub_card}>
                 <div className={styles.card_title}>STORM P3</div>
-                <div className={styles.guide_arrow}>🡲</div>
+                <div className={styles.guide_arrow}>➜</div>
             </div>
             <div className={styles.sub_card}>
                 <div className={styles.card_title}>ORM 1</div>
-                <div className={styles.guide_arrow}>🡲</div>
+                <div className={styles.guide_arrow}>➜</div>
             </div>
         </div>
     )
