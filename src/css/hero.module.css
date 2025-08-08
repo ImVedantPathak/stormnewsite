@@ -116,7 +116,7 @@
 }
 
 .outline {
-    background-color: #000000ab;
+    background-color: transparent;
     color: #3da9fc;
     border: 0.13rem solid #3da9fc;
     transition: background-color 0.3s ease, color 0.3s ease;
