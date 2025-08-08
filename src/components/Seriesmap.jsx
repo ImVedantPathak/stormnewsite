@@ -10,13 +10,15 @@ export default function Seriesmap() {
                     <a href="">Read Article</a>
                 </div>
             </div>
-            <div className={styles.sub_card}>
-                <div className={styles.card_title}>STORM P3</div>
-                <div className={styles.guide_arrow}>➜</div>
-            </div>
-            <div className={styles.sub_card}>
-                <div className={styles.card_title}>ORM 1</div>
-                <div className={styles.guide_arrow}>➜</div>
+            <div className={styles.sub_card_wrapper}>
+                <div className={styles.sub_card}>
+                    <div className={styles.card_title}>STORM P3</div>
+                    <div className={styles.guide_arrow}>➜</div>
+                </div>
+                <div className={styles.sub_card}>
+                    <div className={styles.card_title}>ORM 1</div>
+                    <div className={styles.guide_arrow}>➜</div>
+                </div>
             </div>
         </div>
     )

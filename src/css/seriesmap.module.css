@@ -1,42 +1,49 @@
 .card_wrapper {
-    background-color: rgb(22,22,22); /* Matches the light beige tone */
+    background-color: rgb(22, 22, 22);
     display: flex;
-    padding: 40px;
-    border-radius: 16px;
+    padding: clamp(20px, 3vw, 40px);
+    border-radius: clamp(12px, 1.5vw, 16px);
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1610px;
+    max-width: clamp(300px, 85vw, 1610px);
     margin: auto;
-    margin-top: 120px !important;
-    margin-bottom: 100px !important;
+    margin-top: clamp(60px, 8vw, 120px) !important;
+    margin-bottom: clamp(50px, 6vw, 100px) !important;
+}
+
+.sub_card_wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: clamp(12px, 2vw, 24px);
 }
 
 .text_wrapper {
-    max-width: 750px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: clamp(12px, 2vw, 24px);
+    margin-bottom: 30px;
 }
 
 .header {
-    font-size: 50px;
+    font-size: clamp(26px, 4vw, 50px);
     font-weight: 700;
     color: #ffffff;
 }
 
 .header_subtitle {
-    font-size: 23px;
+    font-size: clamp(14px, 1.5vw, 23px);
     line-height: 1.6;
     color: #cacaca;
 }
 
 .article_button a {
     display: inline-block;
-    padding: 12px 24px;
+    font-size: clamp(12px, 1.3vw, 19px);
+    padding: clamp(8px, 1vw, 12px) clamp(14px, 2vw, 24px);
     background-color: transparent;
     border: 0.13rem solid #3da9fc;
-    border-radius: 8px;
+    border-radius: clamp(6px, 1vw, 8px);
     font-weight: 500;
     text-decoration: none;
     color: #3da9fc;
@@ -50,10 +57,10 @@
 
 .sub_card {
     background-color: #3da9fcb1;
-    padding: 32px;
-    width: 250px;
-    height: 200px;
-    border-radius: 24px;
+    padding: clamp(20px, 2vw, 32px);
+    width: clamp(160px, 15vw, 250px);
+    height: clamp(130px, 12vw, 200px);
+    border-radius: clamp(16px, 2vw, 24px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -62,18 +69,31 @@
 }
 
 .sub_card:hover {
-    /* transform: translateY(-5px); */
     background-color: #3da9fc;
 }
 
 .card_title {
-    font-size: 44px;
+    font-size: clamp(24px, 3vw, 44px);
     font-weight: 600;
     color: #ffffff;
 }
 
 .guide_arrow {
-    font-size: 38px;
+    font-size: clamp(20px, 2.5vw, 38px);
     align-self: flex-end;
     color: #ffffff;
+}
+
+@media (max-width: 1300px) {
+    .card_wrapper {
+        width: clamp(300px, 85vw, 1100px);
+        gap: clamp(20px, 3vw, 40px);
+    }
+
+    .sub_card_wrapper {
+        gap: clamp(20px, 3vw, 40px);
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
 }
