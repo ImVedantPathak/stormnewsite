@@ -43,7 +43,9 @@ export default function IcosahedronScene() {
         // Scene & Camera
         scene = new THREE.Scene();
         camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
-        camera.position.z = 15;
+        const baseSize = Math.min(width / 100, 9);
+        const geometry = new THREE.IcosahedronGeometry(baseSize);
+        camera.position.z = baseSize * 1.7;
 
         // Renderer
         renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
@@ -62,7 +64,7 @@ export default function IcosahedronScene() {
         scene.add(icosahedronGroup);
 
         // Geometry & Wireframe
-        const geometry = new THREE.IcosahedronGeometry(9);
+        // const geometry = new THREE.IcosahedronGeometry(9); // This has been moved to the Scene & Camera setup
         const edges = new THREE.EdgesGeometry(geometry);
         const wireMaterial = new THREE.LineBasicMaterial({ color: 0x7d94ba });
         const wireframe = new THREE.LineSegments(edges, wireMaterial);
@@ -166,6 +168,12 @@ export default function IcosahedronScene() {
             camera.aspect = width / height;
             camera.updateProjectionMatrix();
             renderer.setSize(width, height);
+
+            // Scale group based on width
+            const scaleFactor = Math.min(width / 100, 9) / baseSize;
+            icosahedronGroup.scale.set(scaleFactor, scaleFactor, scaleFactor);
+            particles.scale.set(scaleFactor, scaleFactor, scaleFactor);
+
         };
 
         window.addEventListener('resize', handleResize);

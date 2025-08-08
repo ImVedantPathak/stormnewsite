@@ -5,7 +5,6 @@
     border-radius: clamp(12px, 1.5vw, 16px);
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
     max-width: clamp(300px, 85vw, 1610px);
     margin: auto;
     margin-top: clamp(60px, 8vw, 120px) !important;
