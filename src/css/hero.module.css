@@ -11,8 +11,8 @@
 }
 
 .heroText {
-    font-size: 50px;
-    max-width: 700px;
+    font-size: 63px;
+    max-width: 875px;
 }
 
 .storm_logo {
@@ -29,13 +29,13 @@
 } */
 
 .icosahedron {
-    width: 550px;
-    height: 500px;
+    width: 688px;
+    height: 625px;
     position: relative;
     display: flex;            
     align-items: center;       
     justify-content: center;   
-    transform: translateY(50px);
+    transform: translateY(62.5px);
 }
 
 @media (max-width: 990px) {
@@ -46,45 +46,44 @@
 
 .cardContainer {
     display: flex;
-    gap: 15px;
+    gap: 19px;
     justify-content: left;
     flex-wrap: wrap;
 }
 
 .card {
-    flex: 1 1 250px;
+    flex: 1 1 313px;
     background: rgb(22, 22, 22);
     border-radius: 16px;
     padding: 20px;
-    max-width: 310px;
-    height: 150px;
+    max-width: 388px;
+    height: 188px;
     min-width: 200px;
-    box-shadow: 0 0 3px rgba(245, 245, 245, 0.334);
+    box-shadow: 0 0 4px rgba(245, 245, 245, 0.334);
     display: flex;
     flex-direction: column;
-    gap: 12px;
 }
 
 .cardLabel {
     display: none;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 600;
     color: #c3c3c3;
     text-transform: uppercase;
 }
 
 .cardTitle {
-    font-size: 30px;
+    font-size: 38px;
     font-weight: bold;
     color: #ffffff;
     margin: 0;
 }
 
 .cardDesc {
-    font-size: 15px;
+    font-size: 19px;
     color: #ffffff;
     line-height: 1.5;
-    margin: 0;
+    margin-top: 10px;
 }
 
 .cardButton {
@@ -93,7 +92,7 @@
     border-radius: 8px;
     font-weight: 600;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
     width: 100%;
     transition: all 0.2s ease;
 }

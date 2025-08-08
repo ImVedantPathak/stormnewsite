@@ -3,31 +3,30 @@
     display: flex;
     padding: 40px;
     border-radius: 16px;
-    gap: 40px;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 69%;
+    max-width: 1610px;
     margin: auto;
     margin-top: 120px !important;
     margin-bottom: 100px !important;
 }
 
 .text_wrapper {
-    max-width: 600px;
+    max-width: 750px;
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
 .header {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 700;
     color: #ffffff;
 }
 
 .header_subtitle {
-    font-size: 18px;
+    font-size: 23px;
     line-height: 1.6;
     color: #cacaca;
 }
@@ -52,8 +51,8 @@
 .sub_card {
     background-color: #3da9fcb1;
     padding: 32px;
-    width: 200px;
-    height: 160px;
+    width: 250px;
+    height: 200px;
     border-radius: 24px;
     display: flex;
     flex-direction: column;
@@ -68,13 +67,13 @@
 }
 
 .card_title {
-    font-size: 35px;
+    font-size: 44px;
     font-weight: 600;
     color: #ffffff;
 }
 
 .guide_arrow {
-    font-size: 30px;
+    font-size: 38px;
     align-self: flex-end;
     color: #ffffff;
 }
